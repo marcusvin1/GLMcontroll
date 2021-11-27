@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estoque-projeto-integradora", "estoque-projeto-integradora\estoque-projeto-integradora.csproj", "{FB535FBD-4A8E-46A5-B976-C4EE5B4FE37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB535FBD-4A8E-46A5-B976-C4EE5B4FE37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB535FBD-4A8E-46A5-B976-C4EE5B4FE37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB535FBD-4A8E-46A5-B976-C4EE5B4FE37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB535FBD-4A8E-46A5-B976-C4EE5B4FE37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2CA38DF-00ED-4202-9F9D-3CD63C612DEE}
+	EndGlobalSection
+EndGlobal
