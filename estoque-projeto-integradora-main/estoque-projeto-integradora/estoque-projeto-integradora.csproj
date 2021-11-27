@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB535FBD-4A8E-46A5-B976-C4EE5B4FE37C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>estoque_projeto_integradora</RootNamespace>
+    <AssemblyName>estoque-projeto-integradora</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\Connection.cs" />
+    <Compile Include="Classes\Estoque.cs" />
+    <Compile Include="Classes\Fornecedor.cs" />
+    <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Classes\Geral.cs" />
+    <Compile Include="Classes\ItensPedido.cs" />
+    <Compile Include="Classes\Pagamento.cs" />
+    <Compile Include="Classes\Parcelas.cs" />
+    <Compile Include="Classes\Pedidos.cs" />
+    <Compile Include="Classes\Produto.cs" />
+    <Compile Include="Classes\Setor.cs" />
+    <Compile Include="Forms\AlterarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlterarProduto.Designer.cs">
+      <DependentUpon>AlterarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alterar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alterar_Cliente.Designer.cs">
+      <DependentUpon>Alterar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alterar_Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alterar_Estoque.Designer.cs">
+      <DependentUpon>Alterar_Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alterar_Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alterar_Fornecedor.Designer.cs">
+      <DependentUpon>Alterar_Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alterar_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alterar_Funcionario.Designer.cs">
+      <DependentUpon>Alterar_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Setor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Setor.Designer.cs">
+      <DependentUpon>Cadastrar_Setor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadastrarEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadastrarEstoque.Designer.cs">
+      <DependentUpon>CadastrarEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Cliente.Designer.cs">
+      <DependentUpon>Cadastrar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Fornecedor.Designer.cs">
+      <DependentUpon>Cadastrar_Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Funcionario.Designer.cs">
+      <DependentUpon>Cadastrar_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastrar_Produto.Designer.cs">
+      <DependentUpon>Cadastrar_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Excluir_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Excluir_Cliente.Designer.cs">
+      <DependentUpon>Excluir_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Excluir_Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Excluir_Estoque.Designer.cs">
+      <DependentUpon>Excluir_Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Excluir_Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Excluir_Fornecedor.Designer.cs">
+      <DependentUpon>Excluir_Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Excluir_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Excluir_Funcionario.Designer.cs">
+      <DependentUpon>Excluir_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Excluir_Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Excluir_Pedidos.Designer.cs">
+      <DependentUpon>Excluir_Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pesquisar.Designer.cs">
+      <DependentUpon>Pesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PesquisarMovimentacaoDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PesquisarMovimentacaoDia.Designer.cs">
+      <DependentUpon>PesquisarMovimentacaoDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Realizar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Realizar_Pedido.Designer.cs">
+      <DependentUpon>Realizar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Relatorio.Designer.cs">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipalOficial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipalOficial.Designer.cs">
+      <DependentUpon>FrmPrincipalOficial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Forms\AlterarProduto.resx">
+      <DependentUpon>AlterarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alterar_Cliente.resx">
+      <DependentUpon>Alterar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alterar_Estoque.resx">
+      <DependentUpon>Alterar_Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alterar_Fornecedor.resx">
+      <DependentUpon>Alterar_Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alterar_Funcionario.resx">
+      <DependentUpon>Alterar_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastrar_Setor.resx">
+      <DependentUpon>Cadastrar_Setor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadastrarEstoque.resx">
+      <DependentUpon>CadastrarEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastrar_Cliente.resx">
+      <DependentUpon>Cadastrar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastrar_Fornecedor.resx">
+      <DependentUpon>Cadastrar_Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastrar_Funcionario.resx">
+      <DependentUpon>Cadastrar_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastrar_Produto.resx">
+      <DependentUpon>Cadastrar_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Excluir_Cliente.resx">
+      <DependentUpon>Excluir_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Excluir_Estoque.resx">
+      <DependentUpon>Excluir_Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Excluir_Fornecedor.resx">
+      <DependentUpon>Excluir_Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Excluir_Funcionario.resx">
+      <DependentUpon>Excluir_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Excluir_Pedidos.resx">
+      <DependentUpon>Excluir_Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pesquisar.resx">
+      <DependentUpon>Pesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PesquisarMovimentacaoDia.resx">
+      <DependentUpon>PesquisarMovimentacaoDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Realizar_Pedido.resx">
+      <DependentUpon>Realizar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Relatorio.resx">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipalOficial.resx">
+      <DependentUpon>FrmPrincipalOficial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-out %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\value %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-out %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planet9_3840x2160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_shopping_cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prateleiras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semfoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GLMCONTROLL.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending_up %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending_up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending_up %281%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
