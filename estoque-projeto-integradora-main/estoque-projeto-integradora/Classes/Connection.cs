@@ -21,7 +21,7 @@ namespace estoque_projeto_integradora.Classes
         public void Connect()
         {
             cn.ConnectionString = "SERVER = LAPTOP-PG3TNAT4\\SQLEXPRESS; Database=Controle de estoque; UID=sa; PWD=123;";
-            //cn.ConnectionString = "SERVER = DESKTOP-GM7EVH8\\SQLEXPRESS; Database=Controle de estoque; UID=sa; PWD=1234;";
+            
             cn.Open();
 
         }
